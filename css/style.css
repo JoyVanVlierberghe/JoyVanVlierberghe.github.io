@@ -137,7 +137,7 @@ h5{
 .enter {
     top: 50%;
     right: 200px;
-    position: absolute;
+    position: fixed;
 }
 
 #galerij .column {
@@ -215,14 +215,14 @@ h5{
 }
 
 @media (min-aspect-ratio: 16/9) {
-    #videoBG {
+    #index {
         width: 100%;
         height: auto;
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
-    #videoBG {
+    #index {
         width: auto;
         height: 100%;
     }

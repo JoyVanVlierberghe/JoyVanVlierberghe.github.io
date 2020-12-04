@@ -41,7 +41,7 @@
 
 <body class="container-fluid" id="homepage">
 
-    <header class="container-fluid">
+    <header class="container-fluid row">
 
         <nav class="container-fluid navbar navbar-expand-lg navbar-light sticky-top shadow-sm bg-light">
 
@@ -104,9 +104,9 @@
 
     </header>
 
-    <main class="container-fluid my-5 row">
+    <main class="container-fluid my-5 px-4 row">
 
-        <section class="container-fluid col-3 p-5">
+        <section class="container-fluid col-3 p-5 d-none d-lg-block">
 
             <div id="list-example" class="list-group vastscroll">
 
@@ -138,7 +138,7 @@
 
         </section>
 
-        <section class="container-fluid col-8 p-5 overbg">
+        <section class="container-fluid col-lg-8 col-11 mx-auto mx-lg-0 p-5 overbg">
 
             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
 
@@ -419,48 +419,52 @@
 
     <footer class="container-fluid bg-light py-2">
 
-        <div class="w-25">
+        <div class="container-fluid row d-flex justify-content-center align-items-center">
 
-            <form class="form-group text-light mb-2">
+            <div class="col-md-4 col-10">
 
-                <h5 class="text-dark">
+                <form class="form-group text-light mb-2">
 
-                    Contacteer ons!
+                    <h5 class="text-dark">
 
-                </h5>
+                        Contacteer ons!
 
-                <input class="form-control mb-2" type="text" placeholder="Voornaam">
+                    </h5>
 
-                <input class="form-control mb-2" type="text" placeholder="Naam">
+                    <input class="form-control mb-2" type="text" placeholder="Voornaam">
 
-                <input type="email" class="form-control mb-2" id="Email" placeholder="E-mailadres"
-                    aria-describedby="emailHelp">
+                    <input class="form-control mb-2" type="text" placeholder="Naam">
 
-                <textarea class="form-control mb-2" id="text-area" rows="3" placeholder="Bericht"></textarea>
+                    <input type="email" class="form-control mb-2" id="Email" placeholder="E-mailadres"
+                        aria-describedby="emailHelp">
 
-                <button type="submit" class="btn btn-light mb-2">
+                    <textarea class="form-control mb-2" id="text-area" rows="3" placeholder="Bericht"></textarea>
 
-                    Verzenden
+                    <button type="submit" class="btn btn-light mb-2">
 
-                </button>
+                        Verzenden
 
-            </form>
+                    </button>
 
-            <p class="blockquote-footer text-center p-1">
+                </form>
 
-                &copy Joy Van Vlierberghe
+                <p class="blockquote-footer text-center p-1">
 
-                <cite title="Source Title">
+                    &copy Joy Van Vlierberghe
 
-                    - 2020
+                    <cite title="Source Title">
 
-                </cite>
+                        - 2020
 
-            </p>
+                    </cite>
+
+                </p>
+
+            </div>
+
+            <i onclick="topFunction()" id="myBtn" title="Go to top" class="fas fa-arrow-up"></i>
 
         </div>
-
-        <i onclick="topFunction()" id="myBtn" title="Go to top" class="fas fa-arrow-up"></i>
 
     </footer>
 

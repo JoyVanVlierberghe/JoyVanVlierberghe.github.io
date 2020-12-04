@@ -41,7 +41,7 @@
 
 <body class="container-fluid" id="lastminutes">
 
-    <header class="container-fluid">
+    <header class="container-fluid row">
 
         <nav class="container-fluid navbar navbar-expand-lg navbar-light sticky-top shadow-sm bg-light">
 
@@ -104,7 +104,7 @@
 
     </header>
 
-    <main class="container-fluid my-5">
+    <main class="container-fluid my-5 px-4">
 
         <h3 class="text-center">
 
@@ -112,9 +112,9 @@
 
         </h3>
 
-        <div class="card-deck container-fluid row my-3">
+        <div class="card-deck row container-fluid d-flex flex-column flex-lg-row justify-content-center">
 
-            <div class="card column">
+            <div class="card column col-12 col-lg-4 py-2 px-2 container-fluid mx-lg-2 mx-0">
 
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
@@ -192,7 +192,7 @@
 
             </div>
 
-            <div class="card column">
+            <div class="card column col-12 col-lg-4 py-2 px-2 container-fluid mx-lg-2 mx-0">
 
                 <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
 
@@ -274,7 +274,7 @@
 
             </div>
 
-            <div class="card column">
+            <div class="card column col-12 col-lg-4 py-2 px-2 container-fluid mx-lg-2 mx-0">
 
                 <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
 
@@ -361,48 +361,52 @@
 
     <footer class="container-fluid bg-light py-2">
 
-        <div class="w-25">
+        <div class="container-fluid row d-flex justify-content-center align-items-center">
 
-            <form class="form-group text-light mb-2">
+            <div class="col-md-4 col-10">
 
-                <h5 class="text-dark mt-2">
+                <form class="form-group text-light mb-2">
 
-                    Contacteer ons!
+                    <h5 class="text-dark">
 
-                </h5>
+                        Contacteer ons!
 
-                <input class="form-control mb-2" type="text" placeholder="Voornaam">
+                    </h5>
 
-                <input class="form-control mb-2" type="text" placeholder="Naam">
+                    <input class="form-control mb-2" type="text" placeholder="Voornaam">
 
-                <input type="email" class="form-control mb-2" id="Email" placeholder="E-mailadres"
-                    aria-describedby="emailHelp">
+                    <input class="form-control mb-2" type="text" placeholder="Naam">
 
-                <textarea class="form-control mb-2" id="text-area" rows="3" placeholder="Bericht"></textarea>
+                    <input type="email" class="form-control mb-2" id="Email" placeholder="E-mailadres"
+                        aria-describedby="emailHelp">
 
-                <button type="submit" class="btn btn-light mb-2">
+                    <textarea class="form-control mb-2" id="text-area" rows="3" placeholder="Bericht"></textarea>
 
-                    Verzenden
+                    <button type="submit" class="btn btn-light mb-2">
 
-                </button>
+                        Verzenden
 
-            </form>
+                    </button>
 
-            <p class="blockquote-footer text-center p-1">
+                </form>
 
-                &copy Joy Van Vlierberghe
-    
-                <cite title="Source Title">
-    
-                    - 2020
-    
-                </cite>
-    
-            </p>
+                <p class="blockquote-footer text-center p-1">
+
+                    &copy Joy Van Vlierberghe
+
+                    <cite title="Source Title">
+
+                        - 2020
+
+                    </cite>
+
+                </p>
+
+            </div>
+
+            <i onclick="topFunction()" id="myBtn" title="Go to top" class="fas fa-arrow-up"></i>
 
         </div>
-
-        <i onclick="topFunction()" id="myBtn" title="Go to top" class="fas fa-arrow-up"></i>
 
     </footer>
 
