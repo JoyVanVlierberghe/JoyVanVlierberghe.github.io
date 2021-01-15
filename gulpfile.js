@@ -12,7 +12,7 @@ var paths = {
         dest: "./css/"
     },
     ts: {
-        src: "./src/*.ts",
+        src: "./ts/*.ts",
         dest: "./js/"
     }
 };

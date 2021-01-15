@@ -1,0 +1,100 @@
+$basefont: Raleway;
+$basefontsize: 20px;
+$footerfontsize: 10px;
+$orange: #fd7e14;
+
+body {
+    font-family: $basefont;
+    font-size: $basefontsize;
+    nav {
+        background-color: $orange;
+    }
+    .btn {
+        background-color: $orange;
+        color: white;
+        &:focus {
+            border-color: $orange !important;
+            box-shadow: none !important;
+        }
+        &:hover {
+            color: #212529;
+        }
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 50%;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: $orange;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 15px;
+        &:hover {
+            background-color: rgba(253, 126, 20, 0.3);
+        }
+    }
+    img {
+        width: 100%;
+    }
+    .intel {
+        background-color: $orange;
+        a {
+            color: white;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+        color: $orange;
+        font-size: 50px;
+        &:hover {
+            background-color: $orange;
+            color: white;
+            font-size: 75px;
+        }
+    }
+    .resume,
+    #contact {
+        a {
+            color: $orange;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .accordion-button {
+        &:focus {
+            border-color: $orange !important;
+            box-shadow: none !important;
+        }
+        &:not(.collapsed) {
+            color: $orange;
+            background-color: white !important;
+            &::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            }
+        }
+    }
+    .accordion-button.collapsed {
+        background-color: rgba(253, 126, 20, 0.3);
+    }
+    footer {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        font-size: $footerfontsize;
+        .blockquote {
+            font-size: 15px;
+        }
+    }
+}
