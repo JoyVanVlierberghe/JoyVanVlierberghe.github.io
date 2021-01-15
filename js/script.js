@@ -1,23 +1,17 @@
-"use strict";
-exports.__esModule = true;
-exports.Topbutton = void 0;
-var Topbutton = /** @class */ (function () {
-    function Topbutton() {
-        this.mybutton = document.getElementById("myBtn");
+//Get the button:
+this.mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction(); };
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
     }
-    // window.onscroll = public() { scrollFunction() };
-    Topbutton.prototype.scrollFunction = function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            this.mybutton.style.display = "block";
-        }
-        else {
-            this.mybutton.style.display = "none";
-        }
-    };
-    Topbutton.prototype.topFunction = function () {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    };
-    return Topbutton;
-}());
-exports.Topbutton = Topbutton;
+    else {
+        mybutton.style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
