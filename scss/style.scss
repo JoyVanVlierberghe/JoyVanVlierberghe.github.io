@@ -12,6 +12,13 @@ body {
     .btn {
         background-color: $orange;
         color: white;
+        a{
+            color:white;
+            text-decoration: none;
+            &:hover {
+                color: #212529;
+            }
+        }
         &:focus {
             border-color: $orange !important;
             box-shadow: none !important;
